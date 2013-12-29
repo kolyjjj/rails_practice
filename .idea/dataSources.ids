@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails meidusa: development" uuid="6af15f7e-eee3-4e29-a4bc-39aaf31dbba5">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails meidusa: test" uuid="1b94e2ca-83f5-46a5-8911-6c871aae4d41">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails meidusa: production" uuid="3295230c-ea1f-43b6-ba0f-a890680cecc8">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
