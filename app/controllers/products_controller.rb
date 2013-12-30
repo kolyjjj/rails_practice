@@ -7,6 +7,6 @@ class ProductsController < ApplicationController
   end
 
   def create
-
+    render 'index'
   end
 end
