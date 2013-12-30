@@ -1,6 +1,6 @@
 This is products new page
 
-<%= form_for :product do |f| %>
+<%= form_for :product, url: products_path do |f| %>
 
     <p>
         <%= f.label :title, "名字" %><br>
