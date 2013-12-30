@@ -1,10 +1,11 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
+    logger.debug "products is =============#{@products.inspect}"
   end
 
   def new
-
+    @product = Product.new
   end
 
   def create
