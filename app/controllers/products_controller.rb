@@ -8,8 +8,11 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(post_params)
-    @product.save
-    render 'index'
+    if @product.save
+      render 'index'
+    else
+      render 'new'
+    end
   end
 
   private
