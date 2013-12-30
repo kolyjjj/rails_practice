@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
 body {
   background-color: #fff;
   text-align: center;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  height: 100%;
 }
 
 h2 {
@@ -11,7 +16,7 @@ h2 {
 
 .container {
   background-color: #CCCCFF;
-  height:700px;
-  line-height: 700px;
-  font-size: 2em;
+  height: 100%;
+  line-height: 1000%;
+  font-size: 1.8em;
 }
