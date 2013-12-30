@@ -1,7 +1,7 @@
 class Product < ActiveRecord::Base
-  validate :title, presence: true
-  validate :description, presence: true, length: {minimum: 10}
-  validate :price, presence: true
-  validate :image_url, presence: true
-  validate :tags, presence: true
+  validates :title, presence: true
+  validates :description, presence: true, length: {minimum: 10}
+  validates :price, presence: true
+  validates :image_url, presence: true
+  validates :tags, presence: true
 end
