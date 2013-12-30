@@ -1,0 +1,30 @@
+This is products new page
+
+<%= form_for :product do |f| %>
+
+    <p>
+        <%= f.label :title, "名字" %><br>
+        <%= f.text_field :title %>
+    </p>
+    <p>
+        <%= f.label :description, "描述" %><br>
+        <%= f.text_area :description %>
+    </p>
+    <p>
+        <%= f.label :image_url, "图片地址" %><br>
+        <%= f.text_field :image_url %>
+    </p>
+    <p>
+        <%= f.label :price, "价格" %><br>
+        <%= f.text_field :price %>
+    </p>
+    <p>
+        <%= f.label :tags, "标签" %><br>
+        <%= f.text_field :tags %>
+    </p>
+
+    <p>
+        <%= f.submit '提交' %>
+    </p>
+
+<% end %>
