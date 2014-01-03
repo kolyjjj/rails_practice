@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require coolclock
+//= require moreskins
 //= require_tree .

@@ -2,9 +2,32 @@
 <h2><%= t :hello %></h2>
 
 <div class="container">
-    <p class="container">
-        <%= t :current_time %> <%= Time.now %>
-    </p>
+    <ul class="clock">
+      <li>
+          <canvas class="CoolClock:securephp:130::8:showDigital:logClock"></canvas>
+          <p>Beijing</p>
+      </li>
+      <li>
+          <canvas class="CoolClock:Disc:130::-8:showDigital:logClock"></canvas>
+          <p>San Francisco</p>
+      </li>
+      <li>
+          <canvas class="CoolClock:Tor:130::11:showDigital:logClock"></canvas>
+          <p>Sydney</p>
+      </li>
+      <li>
+          <canvas class="CoolClock:machine:130::5.3:showDigital:logClock"></canvas>
+          <p>Bangalore, India</p>
+      </li>
+      <li>
+          <canvas class="CoolClock:watermelon:130::0:showDigital:logClock"></canvas>
+          <p>London</p>
+      </li>
+      <li>
+          <canvas class="CoolClock:Lev:130::1:showDigital:logClock"></canvas>
+          <p>Berlin, Germany</p>
+      </li>
+    </ul>
 </div>
 
 
