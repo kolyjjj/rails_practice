@@ -1,6 +1,7 @@
 cn:
   products:
     new:
+      page_title: "创建产品"
       name: "产品名称"
       description: "产品描述"
       image_url: "图片url地址"

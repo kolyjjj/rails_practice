@@ -1,6 +1,7 @@
 en:
   products:
     new:
+      page_title: "Create A Product"
       name: "product name"
       description: "description"
       image_url: "image url"
