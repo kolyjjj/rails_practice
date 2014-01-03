@@ -5,7 +5,8 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product = Product.new
+    @product = Product.new if @product.nil?
+    logger.debug "product in new is: #{@product.inspect}"
   end
 
   def create
@@ -13,7 +14,7 @@ class ProductsController < ApplicationController
     if @product.save
       redirect_to action: 'index'
     else
-      render 'new'
+      render :new
     end
   end
 
