@@ -1,3 +1,9 @@
 cn:
   hello: "您好，世界！"
+  current_time: "现在时间是："
   product_name: "产品名称"
+  product_description: "产品描述"
+  product_image_url: "图片url地址"
+  product_price: "价格"
+  product_tags: "标签"
+  product_submit: "提交"

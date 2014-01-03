@@ -21,4 +21,10 @@
 
 en:
   hello: "Hello world!"
+  current_time: "The time is now: "
   product_name: "product name"
+  product_description: "description"
+  product_image_url: "image url"
+  product_price: "price"
+  product_tags: "tags"
+  product_submit: "submit"
