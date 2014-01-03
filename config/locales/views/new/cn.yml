@@ -1,6 +1,4 @@
 cn:
-  hello: "您好，世界！"
-  current_time: "现在时间是："
   products:
     new:
       name: "产品名称"

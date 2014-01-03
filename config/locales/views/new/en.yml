@@ -1,0 +1,9 @@
+en:
+  products:
+    new:
+      name: "product name"
+      description: "description"
+      image_url: "image url"
+      price: "price"
+      tags: "tags"
+      submit: "submit"
