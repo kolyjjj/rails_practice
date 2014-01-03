@@ -1,1 +1,17 @@
-cn:
+en:
+  activerecord:
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: "请输入标题"
+            description:
+              blank: "请输入描述"
+              too_short: "您输入的描述必须大于9个字"
+            price:
+              blank: "请输入价格"
+            image_url:
+              blank: "请输入图片地址"
+            tags:
+              blank: "请输入标签"

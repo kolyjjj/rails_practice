@@ -1,1 +1,17 @@
 en:
+  activerecord:
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: "please input the title of the product"
+            description:
+              blank: "please input the description"
+              too_short: "the length of the description is more than 9"
+            price:
+              blank: "please input the price"
+            image_url:
+              blank: "please input the image url"
+            tags:
+              blank: "please input the tags"
