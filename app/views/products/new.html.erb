@@ -13,28 +13,28 @@ This is products new page
     <% end %>
 
     <p>
-        <%= f.label :title, t(:product_name) %><br>
+        <%= f.label :title, t('.name') %><br>
         <%= f.text_field :title %>
     </p>
     <p>
-        <%= f.label :description, t(:product_description) %><br>
+        <%= f.label :description, t('.description') %><br>
         <%= f.text_area :description %>
     </p>
     <p>
-        <%= f.label :image_url, t(:product_image_url) %><br>
+        <%= f.label :image_url, t('.image_url') %><br>
         <%= f.text_field :image_url %>
     </p>
     <p>
-        <%= f.label :price, t(:product_price) %><br>
+        <%= f.label :price, t('.price') %><br>
         <%= f.text_field :price %>
     </p>
     <p>
-        <%= f.label :tags, t(:product_tags) %><br>
+        <%= f.label :tags, t('.tags') %><br>
         <%= f.text_field :tags %>
     </p>
 
     <p>
-        <%= f.submit t(:product_submit) %>
+        <%= f.submit t('.submit') %>
     </p>
 
 <% end %>
