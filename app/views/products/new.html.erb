@@ -1,9 +1,8 @@
-This is products new page
 
 <%= form_for :product, url: products_path do |f| %>
     <% if @product.errors.any? %>
-        <div id="error_explanation">
-            <h2><%= pluralize(@product.errors.count, "error") %> 个错误:</h2>
+        <div class="error">
+            <p><%= pluralize(@product.errors.count, "error") %> 个错误:</p>
             <ul>
                 <% @product.errors.each_with_index do |msg, i| %>
                     <li><%= msg[1] %></li>
@@ -13,23 +12,23 @@ This is products new page
     <% end %>
 
     <p>
-        <%= f.label :title, t('.name') %><br>
+        <%= f.label :title, t('.name') %>
         <%= f.text_field :title %>
     </p>
     <p>
-        <%= f.label :description, t('.description') %><br>
+        <%= f.label :description, t('.description') %>
         <%= f.text_area :description %>
     </p>
     <p>
-        <%= f.label :image_url, t('.image_url') %><br>
+        <%= f.label :image_url, t('.image_url') %>
         <%= f.text_field :image_url %>
     </p>
     <p>
-        <%= f.label :price, t('.price') %><br>
+        <%= f.label :price, t('.price') %>
         <%= f.text_field :price %>
     </p>
     <p>
-        <%= f.label :tags, t('.tags') %><br>
+        <%= f.label :tags, t('.tags') %>
         <%= f.text_field :tags %>
     </p>
 
