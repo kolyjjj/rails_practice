@@ -1,3 +1,8 @@
 cn:
-  hello: "您好，世界！"
-  current_time: "现在时间是北京时间："
+  hello: "你好，世界！"
+  beijing: "北京"
+  sanF: "旧金山"
+  sydney: "悉尼"
+  bangalore: "班加罗尔，印度"
+  london: "伦敦"
+  berlin: "柏林，德国"

@@ -1,3 +1,8 @@
 en:
   hello: "Hello world!"
-  current_time: "The time is now (Beijing): "
+  beijing: "Beijing"
+  sanF: "San Francisco"
+  sydney: "Sydney"
+  bangalore: "Bangalore, India"
+  london: "London"
+  berlin: "Berlin, Germany"
