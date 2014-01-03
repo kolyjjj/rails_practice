@@ -1,39 +1,56 @@
+<div class="container">
 
-<%= form_for :product, url: products_path do |f| %>
-    <% if @product.errors.any? %>
-        <div class="error">
-            <p><%= pluralize(@product.errors.count, "error") %> 个错误:</p>
-            <ul>
-                <% @product.errors.each_with_index do |msg, i| %>
-                    <li><%= msg[1] %></li>
-                <% end %>
-            </ul>
+    <%= form_for :product, url: products_path, html: {class: 'form-horizontal'} do |f| %>
+        <% if @product.errors.any? %>
+            <div class="error">
+                <p><%= pluralize(@product.errors.count, "error") %> 个错误:</p>
+                <ul>
+                    <% @product.errors.each_with_index do |msg, i| %>
+                        <li><%= msg[1] %></li>
+                    <% end %>
+                </ul>
+            </div>
+        <% end %>
+
+        <div class="form-group">
+            <%= f.label :title, t('.name'), class: 'col-sm-2 control-label' %>
+            <div class="col-sm-10">
+                <%= f.text_field :title, class: 'form-control' %>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :description, t('.description'), class: 'col-sm-2 control-label' %>
+            <div class="col-sm-10">
+                <%= f.text_area :description, class: 'form-control' %>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :image_url, t('.image_url'), class: 'col-sm-2 control-label' %>
+            <div class="col-sm-10">
+                <%= f.text_field :image_url, class: 'form-control' %>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :price, t('.price'), class: 'col-sm-2 control-label' %>
+            <div class="col-sm-10">
+                <%= f.text_field :price, class: 'form-control' %>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :tags, t('.tags'), class: 'col-sm-2 control-label' %>
+            <div class="col-sm-10">
+                <%= f.text_field :tags, class: 'form-control' %>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <%= f.submit t('.submit'), class: 'btn btn-primary btn-lg' %>
+            </div>
         </div>
     <% end %>
-
-    <p>
-        <%= f.label :title, t('.name') %>
-        <%= f.text_field :title %>
-    </p>
-    <p>
-        <%= f.label :description, t('.description') %>
-        <%= f.text_area :description %>
-    </p>
-    <p>
-        <%= f.label :image_url, t('.image_url') %>
-        <%= f.text_field :image_url %>
-    </p>
-    <p>
-        <%= f.label :price, t('.price') %>
-        <%= f.text_field :price %>
-    </p>
-    <p>
-        <%= f.label :tags, t('.tags') %>
-        <%= f.text_field :tags %>
-    </p>
-
-    <p>
-        <%= f.submit t('.submit') %>
-    </p>
-
-<% end %>
+</div>
