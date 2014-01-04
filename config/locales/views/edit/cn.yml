@@ -1,0 +1,10 @@
+cn:
+  products:
+    edit:
+      page_title: "编辑产品"
+      name: "产品名称"
+      description: "产品描述"
+      image_url: "图片url地址"
+      price: "价格"
+      tags: "标签"
+      submit: "提交"

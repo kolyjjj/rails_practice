@@ -9,6 +9,10 @@ class ProductsController < ApplicationController
     logger.debug "product in new is: #{@product.inspect}"
   end
 
+  def edit
+    @product = Product.find(params[:id])
+  end
+
   def create
     @product = Product.new(post_params)
     if @product.save
