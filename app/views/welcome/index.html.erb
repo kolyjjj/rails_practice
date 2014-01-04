@@ -1,6 +1,10 @@
 
 <h2><%= t :hello %></h2>
 
+<div class="row create-button">
+    <%= link_to t('click_me'), products_path, class: 'click-me col-md-offset-10' %>
+</div>
+
 <div class="world-clock">
     <ul class="clock">
       <li>

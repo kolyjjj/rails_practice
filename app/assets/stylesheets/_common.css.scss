@@ -1,6 +1,7 @@
 $container-background-color: rgba(110, 147, 214, 0.36);
 $body-background-color: #ccccff;
 $header-background-color: #66cc66;
+$click-me-color: #fff36b;
 
 html {
   height: 100%;
@@ -22,4 +23,9 @@ h2 {
 .world-clock {
   height: 100%;
   width: 100%;
+}
+
+.click-me {
+  color: $click-me-color;
+  font-size: 0.5em;
 }
