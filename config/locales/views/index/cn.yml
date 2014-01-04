@@ -8,5 +8,6 @@ cn:
       description: "描述"
       price: "价格"
       operation: "操作"
+      create: "创建产品"
       delete: "删除"
       confirm_message: "您确定要删除这行吗？"

@@ -4,3 +4,10 @@ table {
     text-align: center;
   }
 }
+
+.create-button{
+  background: $header-background-color;
+  a{
+    margin-bottom: 5px;
+  }
+}

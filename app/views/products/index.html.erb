@@ -1,5 +1,9 @@
 <h2><%= t('.page_title') %></h2>
 
+<div class="row create-button">
+    <%= link_to t('.create'), new_product_path, class: 'btn btn-default col-md-offset-10' %>
+</div>
+
 <div class="table-responsive">
     <table class="table table-striped table-hover">
         <thead>

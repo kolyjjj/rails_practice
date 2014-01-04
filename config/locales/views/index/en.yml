@@ -8,5 +8,6 @@ en:
       description: "description"
       price: "price"
       operation: "operation"
+      create: "create product"
       delete: "delete"
       confirm_message: "Are you sure to delete this line?"
