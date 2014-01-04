@@ -1,6 +1,6 @@
 <div class="container">
     <h2><%= t('.page_title') %> </h2>
-    <%= form_for :product, url: products_path, html: {class: 'form-horizontal'} do |f| %>
+    <%= form_for :product, url: product_path(@product), method: :patch, html: {class: 'form-horizontal'} do |f| %>
         <% if @product.errors.any? %>
             <div class="error">
                 <p><%= pluralize(@product.errors.count, "error") %> 个错误:</p>
