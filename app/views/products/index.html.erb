@@ -20,11 +20,8 @@
                     <td><%= product.image_url %></td>
                     <td><%= product.description %></td>
                     <td><%= product.price %></td>
-                    <td class="operation">
-                        <button class="btn btn-default btn-sm">
-                            <%= t('.delete') %>
-                        </button>
-                    </td>
+                    <td><%= button_to t('.delete'), product_path(product), class: 'btn btn-default btn-sm',
+                                    method: :delete, data: { confirm: t('.confirm_message') } %></td>
                 </tr>
             <% end %>
         </tbody>

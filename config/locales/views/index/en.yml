@@ -9,3 +9,4 @@ en:
       price: "price"
       operation: "operation"
       delete: "delete"
+      confirm_message: "Are you sure to delete this line?"
