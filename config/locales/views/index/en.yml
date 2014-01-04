@@ -1,0 +1,9 @@
+en:
+  products:
+    index:
+      page_title: "Products"
+      number: "#"
+      name: "name"
+      image_url: "image_url"
+      description: "description"
+      price: "price"

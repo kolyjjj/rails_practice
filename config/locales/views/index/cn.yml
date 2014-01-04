@@ -1,0 +1,9 @@
+cn:
+  products:
+    index:
+      page_title: "产品"
+      number: "#"
+      name: "名字"
+      image_url: "图片地址"
+      description: "描述"
+      price: "价格"
