@@ -9,6 +9,7 @@
                 <th><%= t('.image_url') %></th>
                 <th><%= t('.description') %></th>
                 <th><%= t('.price') %></th>
+                <th><%= t('.operation') %></th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,11 @@
                     <td><%= product.image_url %></td>
                     <td><%= product.description %></td>
                     <td><%= product.price %></td>
+                    <td class="operation">
+                        <button class="btn btn-default btn-sm">
+                            <%= t('.delete') %>
+                        </button>
+                    </td>
                 </tr>
             <% end %>
         </tbody>

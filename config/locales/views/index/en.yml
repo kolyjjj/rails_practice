@@ -7,3 +7,5 @@ en:
       image_url: "image_url"
       description: "description"
       price: "price"
+      operation: "operation"
+      delete: "delete"
