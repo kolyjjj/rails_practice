@@ -13,6 +13,15 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def update
+    @product = Product.find(params[:id])
+    if @product.update(post_params)
+      redirect_to products_path
+    else
+      render :edit
+    end
+  end
+
   def create
     @product = Product.new(post_params)
     if @product.save
