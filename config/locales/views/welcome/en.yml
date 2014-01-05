@@ -1,6 +1,7 @@
 en:
-  hello: "Hello world!"
-  hello_mobile: "Hello World"
+  hello_world: "Hello world!"
+  hello: "Hello"
+  world: "World"
   beijing: "Beijing"
   sanF: "San Francisco"
   sydney: "Sydney"

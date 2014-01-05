@@ -1,6 +1,9 @@
 
-<h2 class="page-title"><%= t :hello %></h2>
-<h2 class="page-title-mobile"><%= t :hello_mobile %></h2>
+<h2 class="page-title"><%= t :hello_world %></h2>
+<h2 class="page-title-mobile">
+    <p></p><%= t :hello %></p>
+    <p></p><%= t :world %></p>
+</h2>
 
 <div class="row create-button">
     <%= link_to t('click_me'), products_path, class: 'click-me col-md-offset-10' %>
