@@ -1,0 +1,15 @@
+.page-title-mobile {
+  display: none;
+}
+
+@media(max-width: 480px) {
+  .page-title-mobile {
+    display: block;
+    font-size: 7em;
+    line-height: 1em;
+  }
+
+  .page-title {
+    display: none;
+  }
+}
