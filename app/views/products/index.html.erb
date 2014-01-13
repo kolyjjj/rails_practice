@@ -21,7 +21,7 @@
             <tr>
                 <td><%= index + 1 %></td>
                 <td><%= product.title %></td>
-                <td><%= product.image_url %></td>
+                <td><%= image_tag '/uploads/'+product.image_url, :size => "230x150" %></td>
                 <td><%= product.description %></td>
                 <td><%= product.price %></td>
                 <td><%= link_to t('.edit'), edit_product_path(product), class: 'btn btn-default btn-sm'

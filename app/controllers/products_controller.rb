@@ -23,13 +23,19 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(post_params)
+    logger.debug "the product object is: -----#{params[:product].inspect}"
+    product = params[:product]
+    @product = Product.new({:title => product[:title], :description => product[:description],
+                            :price => product[:price], :tags => product[:tags],
+                            :image_url => product[:image_url].original_filename})
     if @product.save
+      savePicture(product)
       redirect_to action: 'index'
     else
       render :new
     end
   end
+
 
   def destroy
     @product = Product.find(params[:id])
@@ -38,7 +44,15 @@ class ProductsController < ApplicationController
   end
 
   private
+
+  def savePicture(product)
+    uploaded_io = product[:image_url]
+    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
+  end
+
   def post_params
-    params.require(:product).permit(:title, :description, :tags, :image_url, :price)
+    params.require(:product).permit(:title, :description, :tags, :price, :image_url)
   end
 end
