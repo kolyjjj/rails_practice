@@ -4,7 +4,7 @@ en:
       page_title: "Create A Product"
       name: "product name"
       description: "description"
-      image_url: "image url"
+      image_url: "upload image"
       price: "price"
       tags: "tags"
       submit: "submit"
