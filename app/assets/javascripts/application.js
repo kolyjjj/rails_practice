@@ -19,6 +19,7 @@
 //= require_self
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('page:load', function(){
     $(":file").filestyle({buttonText: "浏览", classButton: "btn btn-primary browser"});
-});
+
+})
