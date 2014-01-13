@@ -15,4 +15,10 @@
 //= require turbolinks
 //= require coolclock
 //= require moreskins
+//= require bootstrap-filestyle
+//= require_self
 //= require_tree .
+
+$(document).ready(function(){
+    $(":file").filestyle({buttonText: "浏览", classButton: "btn btn-primary browser"});
+});
