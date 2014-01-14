@@ -2,9 +2,3 @@ cn:
   products:
     new:
       page_title: "创建产品"
-      name: "产品名称"
-      description: "产品描述"
-      image_url: "上传图片"
-      price: "价格"
-      tags: "标签"
-      submit: "提交"

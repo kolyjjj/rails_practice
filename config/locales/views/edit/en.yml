@@ -2,9 +2,3 @@ en:
   products:
     edit:
       page_title: "Edit A Product"
-      name: "product name"
-      description: "description"
-      image_url: "upload image"
-      price: "price"
-      tags: "tags"
-      submit: "submit"
