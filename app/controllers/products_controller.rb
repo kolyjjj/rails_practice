@@ -23,13 +23,16 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
     logger.debug "the product to be updated is: -----#{@product.inspect}"
-    logger.debug "the new product is: -----#{param[:product]  .inspect}"
+    logger.debug "the new product is: -----#{params[:product].inspect}"
 
-    #product = params[:product]
-    if @product.update(post_params)
-    #if @product.update({:title => product[:title], :description => product[:description],
-    #                        :price => product[:price], :tags => product[:tags],
-    #                        :image_url => product[:image_url].original_filename})
+    product = params[:product]
+    pic = product[:image_url].original_filename if !product[:image_url].nil?
+
+    #if @product.update(post_params)
+    if @product.update({:title => product[:title], :description => product[:description],
+                            :price => product[:price], :tags => product[:tags],
+                            :image_url => pic})
+      savePicture product
       redirect_to products_path
     else
       render :edit
@@ -45,7 +48,7 @@ class ProductsController < ApplicationController
                             :price => product[:price], :tags => product[:tags],
                             :image_url => pic})
     if @product.save
-      savePicture(product)
+      savePicture product
       redirect_to action: 'index'
     else
       render :new
@@ -68,6 +71,7 @@ class ProductsController < ApplicationController
     end
   end
 
+  # this method is unused
   def product_params
     logger.debug "parmas.require is: #{params.require(:product)}"
     params.require(:product).permit(:title, :description, :tags, :price, :image_url)
