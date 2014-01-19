@@ -5,8 +5,8 @@
     </div>
     <%= form_for @product, html: {class: 'form-horizontal'} do |f| %>
         <% if @product.errors.any? %>
-            <div class="error">
-                <p><%= pluralize(@product.errors.count, "error") %> 个错误:</p>
+            <div class="error col-sm-offset-2">
+                <p><%= pluralize(@product.errors.count, t('.error_count_singular'), t('.error_count_plural')) %></p>
                 <ul>
                     <% @product.errors.each_with_index do |msg, i| %>
                         <li><%= msg[1] %></li>

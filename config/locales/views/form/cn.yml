@@ -9,3 +9,5 @@ cn:
       tags: "标签"
       submit: "提交"
       back: "返回"
+      error_count_singular: "个错误:"
+      error_count_plural: "个错误:"

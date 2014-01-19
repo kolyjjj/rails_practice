@@ -9,3 +9,5 @@ en:
       tags: "tags"
       submit: "submit"
       back: "back"
+      error_count_singular: "error:"
+      error_count_plural: "errors:"
