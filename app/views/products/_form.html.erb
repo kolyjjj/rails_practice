@@ -1,5 +1,8 @@
 <div class="container">
     <h2><%= page_title %> </h2>
+    <div class="create-button">
+        <%= link_to t('.back'), products_path, class: 'btn btn-default col-md-offset-10' %>
+    </div>
     <%= form_for @product, html: {class: 'form-horizontal'} do |f| %>
         <% if @product.errors.any? %>
             <div class="error">
